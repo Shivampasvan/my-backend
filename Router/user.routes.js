@@ -27,7 +27,7 @@ userRouter.post("/add", async (req, res) => {
       age,
     });
     await user.save();
-    res.status(200).send("User's data added to the server !!");
+    res.status(200).send("User's data added to the database !!");
   } catch (error) {
     res.status(400).send(error.msg);
   }

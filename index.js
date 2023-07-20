@@ -2,6 +2,7 @@ require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
 const app = express();
+
 const { connection } = require("./Config/connection");
 const { userRouter } = require("./Router/user.routes");
 
@@ -12,7 +13,7 @@ app.use("/user", userRouter);
 
 app.get("/", (req, res) => {
   res.send(
-    '<h1 style="text-align:center; color:Blue;">Welcome To Frequent Backend</h1>'
+    '<h1 style="text-align:center; color:rgb(255,59,43); font-size:60px; margin-top:50px;">Welcome To Frequent Backend</h1>'
   );
 });
 
