@@ -11,7 +11,7 @@ const userSchema = mongoose.Schema({
   dob: String,
   age: Number,
 });
-
+ 
 const UserModel = mongoose.model("user", userSchema);
 
 module.exports = {
